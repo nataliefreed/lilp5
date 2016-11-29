@@ -60,10 +60,10 @@ function changeState(state) {
   
   if(gameState === "firstMarshmallow") {
     numMarshmallows = 1;
-    gameText = "Here is a marshmallow for you.\n\nIf you can wait 2 minutes before eating it,\n you can have 3 marshmallows.";
+    gameText = "Here is a marshmallow for you.\n\nIf you can wait 1 minute before eating it,\n you can have 3 marshmallows.";
     button.show();
     button.html("Eat it");
-    setTimeout('changeState("won")', 10000);
+    setTimeout('changeState("won")', 60000);
   }
   else if(gameState === "won") {
     numMarshmallows = 3;
